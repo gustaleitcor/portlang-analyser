@@ -4,14 +4,18 @@ from Analyser import Analyser
 
 
 def main():
-    phrase = "Grupo dono do Outback avalia venda de operações no Brasil"
+    # Frase a ser analisada sintaticamente
+    phrase = "Marcelo trabalha até 10 horas da noite"
 
-    # analyser = Analyser("grammar.mrg", "obj.json")
+    # Inicializando a gramática com a gramática do arquivo e frase alvo
     analyser = Analyser("grammar.mrg", phrase)
+    # Analisa a frase alvo com a gramática
     b = analyser.analyse_phrase(phrase)
 
+    # Se alguma árvore sintática for gerada
     if b == 0:
         print("Frase não reconhecida pela gramática.")
+    # Se nenhuma árvore sintática for gerada
     else:
         print("Frase reconhecida pela gramática.")
 

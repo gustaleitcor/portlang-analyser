@@ -4,7 +4,7 @@ from Analyser import Analyser
 
 
 def main():
-    phrase = "eu odeio Romulo e ele é ruim"
+    phrase = "Grupo dono do Outback avalia venda de operações no Brasil"
 
     # analyser = Analyser("grammar.mrg", "obj.json")
     analyser = Analyser("grammar.mrg", phrase)

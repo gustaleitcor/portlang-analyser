@@ -1,0 +1,13 @@
+texto -> sentenca conectivos sentenca PUNCT
+sentenca -> NP sintagma_verbal |
+NP -> adjunto_adnominal nomes adjunto_adnominal 
+nomes -> nome nomes |
+nome -> N | NPROP | PROSUB | PROPESS 
+adjunto_adnominal -> adjuntos adjunto_adnominal |
+adjuntos -> ADJ | ADV | ADV-KS | ADV-KS-REL | ART | NUM | PDEN | PROADJ | PRO-KS | PRO-KS-REL |
+sintagma_verbal -> V NP PP | V ADV | VAUX PCP NP PP |
+PP -> PREP NP PP |
+conectivos -> conectivo conectivos |
+conectivo -> KC | KS 
+PUNCT -> '.' | '!' | '?' | '...' |
+
